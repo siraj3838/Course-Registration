@@ -4,6 +4,7 @@ import Courses from './components/Courses/Courses'
 import CoursesList from './components/CoursesList/CoursesList'
 import Header from './components/Header/Header'
 import Swal from 'sweetalert2'
+
 function App() {
 const [cours, setCours] = useState([])
 const [time, setTime] = useState(0)
@@ -29,7 +30,7 @@ const selectBtn = (singleCours) =>{
     if(ream < 0){
       Swal.fire(
         'Sorry',
-        'Your Remaining Time Are Finish',
+        'Your Remaining Time Finish',
         'question'
       )
     }
@@ -43,7 +44,7 @@ const selectBtn = (singleCours) =>{
   }
 }
   return (
-    <div className='max-w-screen-xl mx-auto p-5 lg:p-0 sm:p-5'>
+    <div className='max-w-screen-xl mx-auto p-5 lg:p-0 sm:p-5 mb-10'>
       <Header></Header>
       <div className='flex gap-6'>
         <Courses selectBtn={selectBtn}></Courses>

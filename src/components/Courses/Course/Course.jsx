@@ -3,7 +3,7 @@ const Course = ({singleCours, selectBtn}) => {
     const {title, id, price, image, credit, description} = singleCours;
     return (
         <div className="bg-white p-4 sm:p-3 lg:p-6 rounded-lg text-center lg:text-left">
-            <img src={image} alt="" />
+            <img className="w-full" src={image} alt="" />
             <h3 className="text-[#1C1B1B] text-xs lg:text-base font-semibold mt-4 mb-3">{title}</h3>
             <p className="text-[#1C1B1B99] lg:text-sm text-xs mb-4">{description}</p>
             <div className="flex items-center justify-between px-2 lg:px-0">
