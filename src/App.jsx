@@ -1,4 +1,5 @@
 import './App.css'
+import CourseCards from './components/CoursePlayListCards/CoursesCard/CourseCards'
 
 function App() {
 
@@ -6,7 +7,9 @@ function App() {
     <>
       
       <h1>Course Registration</h1>
-      
+      <div>
+        <CourseCards></CourseCards>
+      </div>
     </>
   )
 }
