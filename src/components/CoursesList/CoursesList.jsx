@@ -1,5 +1,7 @@
 
+
 const CoursesList = ({ cours, time, prices, remaining }) => {
+    
     return (
         <div className="lg:w-1/4 w-2/4 sm:w-2/4 bg-white p-3 lg:p-6 rounded-lg h-fit">
             <h2 className="text-[#2F80ED] text-xs sm:text-base lg:text-lg font-bold">Credit Hour Remaining <span>{remaining}</span> hr</h2>
@@ -17,5 +19,6 @@ const CoursesList = ({ cours, time, prices, remaining }) => {
         </div>
     );
 };
+
 
 export default CoursesList;

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Course from "./Course/Course";
-
 const Courses = ({selectBtn}) => {
     const [courses, setCourses] = useState([])
     useEffect(()=>{
