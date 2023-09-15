@@ -13,7 +13,7 @@ const Course = ({singleCours, selectBtn}) => {
             <h4 className="text-xs lg:text-base text-[#1C1B1B99] font-medium flex gap-1 items-center"><span className="lg:text-xl"><FiDollarSign></FiDollarSign></span> Price: <span>{price}</span></h4>
             <h4 className="text-xs lg:text-base text-[#1C1B1B99] font-medium flex gap-1 items-center"><span className="lg:text-xl"><BsBook></BsBook></span> Credit: <span>{credit}</span>hr</h4>
             </div>
-            <button onClick={()=> selectBtn(singleCours)} className="bg-[#2F80ED] px-16 sm:px-14 lg:px-[105px] text-white py-2 mt-6">Select</button>
+            <button onClick={()=> selectBtn(singleCours)} className="bg-[#2F80ED] px-16 sm:px-14 lg:px-[105px] text-white py-2 mt-6 rounded-lg">Select</button>
         </div>
     );
 };
